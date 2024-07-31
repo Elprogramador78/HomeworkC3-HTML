@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework HTML HENRY</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>Mi primera página web</h1>
+        <div id="encabezado">
+        <h1 class="titulos">Mi primera página web</h1>
 
         <p>Despues de conocer e identificar cada una de las etiquetas de formato, etiquetas
             de Bloque y las etiquetas de Contenido, voy a crear mi primera página web gracias
             a los tutores de Henry.
         </p>
+        </div>
 
     </header>
 
@@ -21,7 +24,7 @@
 
     <main>
         <section>
-            <h2>Esta es una primera Sección</h2>
+            <h2 class="titulos">Esta es una primera Sección</h2>
 
             <p>Es esta sección hago uso del h2 como etiqueta de titulo y de la etiqueta p 
                 para escribir el presente parrafo. </p>
@@ -30,53 +33,55 @@
     <hr> <br><br>
 
         <section>
-            <h2>Esta es la segunda Sección</h2>
+            <h2 class="titulos">Esta es la segunda Sección</h2>
 
             <p>En esta sección voy a utilizar la etiqueta img para ingresar una foto.</p>
 
-            <img src="programmer1.jpg" alt="imagen programación">
+            <img id="imagen" src="programmer1.jpg" alt="imagen programación">
         </section>
 
     <hr> <br><br>
 
         <section>
-            <h2>Esta es la tercera sección</h2>
+            <h2 class="titulos">Esta es la tercera sección</h2>
 
             <p>En la presente sección voy hacer uso de la etiqueta a para crear un enlace.</p>
 
-            <a href="About.html">Conocenos</a>
+            <a id="enlace-about" href="About.html">Conocenos</a>
 
         </section>
             
     <hr> <br><br>
         <section>
-            <h1>CONTACTANOS</h1>
+            <h2 class="titulos">CONTACTANOS</h1>
 
             <p>En la presente sección hare uso de un formulario para que un
                     usuario pueda registrar sus datos.
             </p>
 
             <form>
-                <div>
-                    <input type="text" placeholder="Nombres">
+                <div id="formulario-container">
+                    <div>
+                        <input type="text" placeholder="Nombres">
 
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Apellidos">
+
+                    </div>
+
+                    <div>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div>
+                        <input type="password" placeholder="Contraseña">
+                    </div>
+                    
+                    
+                    <button id="boton-enviar">Enviar</button>
                 </div>
-
-                <div>
-                    <input type="text" placeholder="Apellidos">
-
-                </div>
-
-                <div>
-                    <input type="email" placeholder="Email">
-                </div>
-
-                <div>
-                    <input type="password" placeholder="Contraseña">
-                </div>
-                
-                
-                <button>Enviar</button>
             </form>
         
         </section>
@@ -84,21 +89,21 @@
         <hr><br><br>
 
         <section>
-            <h1>Última sección</h1>
+            <div id="lista">
+                <h2 class="titulos">Última sección</h1>
 
-            <p>En esta última sección hare uso de la etiqueta ol para realizar una lista,
-                con los tipos de etiquetas que he aprendido.
+                <p>En esta última sección hare uso de la etiqueta ol para realizar una lista,
+                    con los tipos de etiquetas que he aprendido.
 
-            </p>
+                </p>
 
-            <ul>
-                <li>Etiquetas de Formato</li>
-                <li>Etiquetas de Bloque</li>
-                <li>Etiquetas de Contenido</li>
-            </ul>
+                <ul>
+                    <li>Etiquetas de Formato</li>
+                    <li>Etiquetas de Bloque</li>
+                    <li>Etiquetas de Contenido</li>
+                </ul>
+            </div>
         </section>
-
-   
 
     </main>
 
@@ -106,9 +111,10 @@
 
 
     <footer>
+        <div id="pie-pagina">
 
-        Medellín - Colombia 2024.-
-
+            Medellín - Colombia 2024.-
+        </div>
     </footer>
     
 </body>
